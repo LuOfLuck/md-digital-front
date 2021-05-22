@@ -2,21 +2,21 @@
     margin: 0;
     padding: 0;
 }
-
-
 .card{
     display: flex;
     flex-direction: row;
+    border-top:1px solid black;
 }
-.card__title{
-    color:black;
-}
-.card__text{
-    color:grey;
-}
+
 .card__img{
     position: relative;
 }
+
+.card__img > img{  
+    width:40vw;
+    height: auto;
+}
+
 .img__icon{
     width:50px;
     height: 50px;
@@ -32,6 +32,7 @@
     transition: .5s;
     cursor: pointer;
 }
+
 .img__icon__play{
     height: 0;
     width: 0;
@@ -45,45 +46,76 @@
     left:17px;
 
 }
+
 .img__icon:hover{
     background-color: transparent;
     box-shadow: none;
+
 }
+
 .img__icon:hover .img__icon__play{
-    border-left-color:blue;
+    border-left-color:white;
+}
+.card__body{
+    padding: 20px 40px;
+}
+
+.card__title{
+    margin: 20px 0;
+    color:black;
+}
+
+.card__text{
+    color:grey;
 }
 
 .modal{
-    position: relative;
-    display:none;
+    display:flex;
+    visibility: hidden;
+    opacity:0;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: 0vw;
+    height: 0vh;
     position: absolute;
     top:0;
     z-index: 20;
-    background-color: rgba(128, 128, 128, 0.8);
+    transition: 1s ease;
+    background-color: rgba(0, 0, 0, 0.85);
 }
-.modal-exit{
+
+.active{
+    width:100vw;
+    height:100vh;
+    opacity:1;
+    visibility:visible;
+}
+
+.modal__exit{
     height: 60px;
     width: 60px;
     position:absolute;
     top: 60px;
     right: 60px;
     z-index:30;
-    background-color: white;
-    color:black;
-    box-shadow: 0px 0px 10px black;
+    background-color: transparent;
+    color:whitesmoke;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white;
     border: 0px;
     border-radius: 50%;
     cursor:pointer;
 }
 
-.modal-exit:hover{
+.modal video{
+    height: auto;
+    width: 100vw;
+}
+.modal__exit:hover{
     transition: .5s;
-    color: white;
-    background-color: black
+    text-shadow: 0px 0px 20px whitesmoke;
+    box-shadow: 0px 0px 20px whitesmoke;
 }
 
 @media(max-width: 769px){
@@ -91,14 +123,21 @@
         flex-direction: column;
         overflow:hidden
     }
+
     .card__img > img{
         width:100vw;
         height: auto;
     }
-    .modal video{
-        height: 50%;
-        width: 100vw;
+
+    
+    .card__body{
+        padding: 0;
     }
+    
+    .card__title, .card__text{
+        margin: 20px 5px;
+    }
+
     .modal-exit{
         height: 50px;
         width: 50px;

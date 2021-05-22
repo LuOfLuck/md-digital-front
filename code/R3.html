@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Guerrero Lucas"/>
+    <meta name="description" content="Tarjeta responsive de reto frontend, como ejemplo una cancion 'Blue bird'"/>
+    <meta name="keywords" content="blue bird, pajaro azul, Naruto, Naruto shippuden OP 3, musica, tarjeta"/>
+    <meta name="robots" content="index"/>
+    <meta http-equiv="expires" content="10000"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/R3.css">
@@ -10,7 +15,7 @@
 <body>
     <div class="card">
         <div class="card__img">
-            <img src="img/card-img.webp" alt="Lorem ipsum dolor">
+            <img src="img/card-img.webp" alt="Blue bird - cover fingerstyle">
             <div id="play" class="img__icon">
                 <div class="img__icon__play"></div>
             </div>
@@ -33,9 +38,9 @@
     </div>
 
     <div id="id-modal-card" class="modal" >
-            <button id="exit" class="modal-exit"> X </button>
-        <video src="video/blue-bird.mp4" controls>
-            <source src="video/blue-bird.mp4" type="video/mp4">
+        <button id="exit" class="modal__exit"> X </button>
+        <video id="video" src="video/blue-bird.mp4" controls>
+            <source src="video/blue-bird.mp4" type="video/mp4 autoplay">
         </video>
     </div>
     

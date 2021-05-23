@@ -16,5 +16,8 @@ al código pues se puede entender con claridad.
 Puede clonar o descargar el repositorio y ver los resultados localmente sin la necesidad de hacer ninguna instalación previa, o también puede ver los desde los siguientes enlaces
 
 - [R2.html](https://luofluck.github.io/md-digital-front/code/R2.html)
+    - R2 es una tabla de usuarios con información básica de ellos, solo con HTML y CSS
 - [R3.html](https://luofluck.github.io/md-digital-front/code/R3.html)
+    - R3 cree la tarjeta de publicación/noticia/información rellenando con Lorem a excepción de la foto y video que elegí a gusto. Acá agregue JS para hacer las animaciones y mostrar el modal
 - [R4.html](https://luofluck.github.io/md-digital-front/code/R4.html)
+    - Tabla de libros sobre programación gratuitos, información de los libros sacadas de la [API REST](https://www.etnassoft.com/api/v1/) de [OpenLibra](https://openlibra.com/)
